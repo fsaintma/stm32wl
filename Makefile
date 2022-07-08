@@ -9,20 +9,19 @@ VENDOR_ROOT = ./bsp/
 # Project specific
 TARGET = main.elf
 ASM_DIR = Startup/
-SRC_DIR = Src/
 INC_DIR = Inc/
 
 # Toolchain
 CC = $(TOOLCHAIN_ROOT)arm-none-eabi-gcc
 
 # Project sources
-SRC_FILES = $(wildcard STM32WLxx_HAL_Driver/$(SRC_DIR)*.c)
+SRC_FILES  = $(wildcard STM32WLxx_HAL_Driver/Src/*.c)
 SRC_FILES += $(wildcard Drivers/BSP/STM32WLxx_Nucleo/*.c)
 SRC_FILES += $(wildcard Middlewares/LoRaWAN/*.c) $(wildcard Middlewares/LoRaWAN/*/*.c)
 SRC_FILES += $(wildcard Middlewares/SubGHz_Phy/*.c)
 SRC_FILES += $(wildcard LoRaWAN/*/*.c)
 SRC_FILES += $(wildcard Utilities/*.c)
-SRC_FILES += $(wildcard $(SRC_DIR)*.c)
+SRC_FILES += $(wildcard Core/*.c)
 
 ASM_FILES = $(wildcard $(ASM_DIR)*.s)
 LD_SCRIPT = STM32WL55JCIX_FLASH.ld
