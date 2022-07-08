@@ -49,7 +49,7 @@
 
 #define ACTIVATION_MODE     		OTAA
 #define CLASS						CLASS_C
-#define SEND_BY_PUSH_BUTTON 		true
+#define SEND_BY_PUSH_BUTTON 		false
 #define FRAME_DELAY         		10000
 #define SPREADING_FACTOR    		10
 #define ADAPTIVE_DR         		true
@@ -59,7 +59,7 @@
 #define CAYENNE_LPP_         		false
 #define LOW_POWER           		false
 
-#define devEUI_						{ 0x00, 0x80, 0xE1, 0x15, 0x05, 0x00, 0xD9, 0xF1 }
+#define devEUI_						{ 0x70, 0xB3, 0xD5, 0x7E, 0xD0, 0x04, 0xBD, 0x7C }
 
 // Configuration for ABP Activation Mode
 #define devAddr_ 					( uint32_t )0x12345678
@@ -68,7 +68,7 @@
 
 
 // Configuration for OTAA Activation Mode
-#define appKey_						F2,55,B7,74,8A,00,FF,7C,22,34,4C,34,02,F6,35,6F
+#define appKey_						D8,67,3F,C5,9F,DD,15,5F,A8,33,0D,91,4C,05,ED,0D
 #define appEUI_						{ 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }
 
 
